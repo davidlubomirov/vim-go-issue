@@ -1,0 +1,62 @@
+sent: Content-Length: 559
+
+{"method":"initialize","jsonrpc":"2.0","id":1,"params":{"rootUri":"file:///Users/davidlubomirov/Desktop/repos/personal/test-project","capabilities":{"workspace":{"workspaceFolders":true,"configuration":true,"didChangeConfiguration":{"dynamicRegistration":true}},"textDocument":{"completion":{"completionItem":{"snippetSupport":false}},"hover":{"contentFormat":["plaintext"]}}},"processId":98620,"workspaceFolders":[{"uri":"file:///Users/davidlubomirov/Desktop/repos/personal/test-project","name":"/Users/davidlubomirov/Desktop/repos/personal/test-project"}]}}
+stderr: 2020/03/03 11:43:27 debug server listening on port 53874
+sent: Content-Length: 313
+
+{"method":"textDocument/didOpen","jsonrpc":"2.0","params":{"textDocument":{"uri":"file:///Users/davidlubomirov/Desktop/repos/personal/test-project/main.go","version":1,"languageId":"go","text":"package main\n\nfunc testFunc() string {\n\treturn \"TestFunc\"\n}\n\nfunc main() {\n\tfmt.Println(testFunc())\n}\n"}}}
+sent: Content-Length: 52
+
+{"method":"initialized","jsonrpc":"2.0","params":{}}
+received: Content-Length: 818
+
+{"jsonrpc":"2.0","result":{"capabilities":{"textDocumentSync":{"openClose":true,"change":2,"save":{}},"completionProvider":{"triggerCharacters":["."]},"hoverProvider":true,"signatureHelpProvider":{"triggerCharacters":["(",","]},"definitionProvider":true,"typeDefinitionProvider":true,"implementationProvider":true,"referencesProvider":true,"documentHighlightProvider":true,"documentSymbolProvider":true,"codeActionProvider":true,"codeLensProvider":{},"documentLinkProvider":{},"documentFormattingProvider":true,"documentOnTypeFormattingProvider":{"firstTriggerCharacter":""},"renameProvider":true,"foldingRangeProvider":true,"executeCommandProvider":{"commands":["tidy"]},"workspace":{"workspaceFolders":{"supported":true,"changeNotifications":"workspace/didChangeWorkspaceFolders"}}},"serverInfo":{"name":""}},"id":1}
+sent: Content-Length: 38
+
+{"id":1,"jsonrpc":"2.0","result":null}
+received: Content-Length: 268
+
+{"jsonrpc":"2.0","method":"client/registerCapability","params":{"registrations":[{"id":"workspace/didChangeConfiguration","method":"workspace/didChangeConfiguration"},{"id":"workspace/didChangeWorkspaceFolders","method":"workspace/didChangeWorkspaceFolders"}]},"id":1}
+sent: Content-Length: 357
+
+{"id":2,"jsonrpc":"2.0","result":[{"deepCompletion":true,"usePlaceholders":false,"completeUnimported":true,"buildFlags":[],"hoverKind":"NoDocumentation","staticcheck":false,"fuzzyMatching":true},{"deepCompletion":true,"usePlaceholders":false,"completeUnimported":true,"buildFlags":[],"hoverKind":"NoDocumentation","staticcheck":false,"fuzzyMatching":true}]}
+received: Content-Length: 1849
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"2020/03/03 11:43:27 Build info\n----------\ngolang.org/x/tools/gopls v0.3.2\n    golang.org/x/tools/gopls@v0.3.2 h1:eP1aj1AvT6ynElQH6KP0mmOT2gnWa1gYclHL4wGUbMo=\n    github.com/BurntSushi/toml@v0.3.1 h1:WXkYYl6Yr3qBf1K79EBnL4mak0OimBfB0XUf9Vl28OQ=\n    github.com/sergi/go-diff@v1.0.0 h1:Kpca3qRNrduNnOQeazBd0ysaKrUJiIuISHxogkT9RPQ=\n    golang.org/x/mod@v0.1.1-0.20191105210325-c90efee705ee h1:WG0RUwxtNT4qqaXX3DPA8zHFNm/D9xaBpxzHt1WcA/E=\n    golang.org/x/sync@v0.0.0-20190423024810-112230192c58 h1:8gQV6CLnAEikrhgkHFbMAEhagSSnXWGV915qUMm9mrU=\n    golang.org/x/tools@v0.0.0-20200212213342-7a21e308cf6c h1:D2X+P0Z6ychko7xn2jvd38yxQfdU0eksO4AHfd8AWFI=\n    golang.org/x/xerrors@v0.0.0-20191011141410-1b5146add898 h1:/atklqdjdhuosWIl6AIbOeHJjicWYPqR9bpxqxYG2pA=\n    honnef.co/go/tools@v0.0.1-2019.2.3 h1:3JgtbtFHMiCmsznwGVTUWbgGov+pVqnlf1dEJTNAXeM=\n    mvdan.cc/xurls/v2@v2.1.0 h1:KaMb5GLhlcSX+e+qhbRJODnUUBvlw01jt4yrjFIHAuA=\n\nGo info\n-------\ngo version go1.12.7 darwin/amd64\n\nGOARCH=\"amd64\"\nGOBIN=\"\"\nGOCACHE=\"/Users/davidlubomirov/Library/Caches/go-build\"\nGOEXE=\"\"\nGOFLAGS=\"\"\nGOHOSTARCH=\"amd64\"\nGOHOSTOS=\"darwin\"\nGOOS=\"darwin\"\nGOPATH=\"/Users/davidlubomirov/go\"\nGOPROXY=\"\"\nGORACE=\"\"\nGOROOT=\"/usr/local/go\"\nGOTMPDIR=\"\"\nGOTOOLDIR=\"/usr/local/go/pkg/tool/darwin_amd64\"\nGCCGO=\"gccgo\"\nCC=\"clang\"\nCXX=\"clang++\"\nCGO_ENABLED=\"1\"\nGOMOD=\"\"\nCGO_CFLAGS=\"-g -O2\"\nCGO_CPPFLAGS=\"\"\nCGO_CXXFLAGS=\"-g -O2\"\nCGO_FFLAGS=\"-g -O2\"\nCGO_LDFLAGS=\"-g -O2\"\nPKG_CONFIG=\"pkg-config\"\nGOGCCFLAGS=\"-fPIC -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fdebug-prefix-map=/var/folders/ml/cg4bkv2x3n1g3v89r7x77z100000gp/T/go-build619611734=/tmp/go-build -gno-record-gcc-switches -fno-common\"\n"}}
+received: Content-Length: 334
+
+{"jsonrpc":"2.0","method":"workspace/configuration","params":{"items":[{"scopeUri":"file:///Users/davidlubomirov/Desktop/repos/personal/test-project","section":"gopls"},{"scopeUri":"file:///Users/davidlubomirov/Desktop/repos/personal/test-project","section":"gopls-/Users/davidlubomirov/Desktop/repos/personal/test-project"}]},"id":2}
+received: Content-Length: 135
+
+{"jsonrpc":"2.0","method":"window/showMessage","params":{"type":2,"message":"config fuzzyMatching is deprecated, use matcher instead"}}
+received: Content-Length: 135
+
+{"jsonrpc":"2.0","method":"window/showMessage","params":{"type":2,"message":"config fuzzyMatching is deprecated, use matcher instead"}}
+received: Content-Length: 171
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"2020/03/03 11:43:27 go/packages.Load\n\tsnapshot = 0\n\tquery = [./ builtin]\n\tpackages = 2"}}
+received: Content-Length: 230
+
+{"jsonrpc":"2.0","method":"window/showMessage","params":{"type":2,"message":"You are neither in a module nor in your GOPATH. Please see https://github.com/golang/go/wiki/Modules for information on how to set up your Go project."}}
+received: Content-Length: 163
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"2020/03/03 11:43:27 go/packages.Load\n\tsnapshot = 1\n\tquery = [./]\n\tpackages = 1"}}
+received: Content-Length: 323
+
+{"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"uri":"file:///Users/davidlubomirov/Desktop/repos/personal/test-project/main.go","version":1,"diagnostics":[{"range":{"start":{"line":7,"character":1},"end":{"line":7,"character":12}},"severity":1,"source":"compiler","message":"undeclared name: fmt"}]}}
+received: Content-Length: 230
+
+{"jsonrpc":"2.0","method":"window/showMessage","params":{"type":2,"message":"You are neither in a module nor in your GOPATH. Please see https://github.com/golang/go/wiki/Modules for information on how to set up your Go project."}}
+received: Content-Length: 163
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"2020/03/03 11:43:27 go/packages.Load\n\tsnapshot = 0\n\tquery = [./]\n\tpackages = 1"}}
+sent: Content-Length: 318
+
+{"method":"textDocument/didChange","jsonrpc":"2.0","params":{"contentChanges":[{"text":"package main\n\nfunc testFunc() string {\n\treturn \"TestFunc\"\n}\n\nfunc main() {\n\tfmt.Println(testFunc())\n}\n"}],"textDocument":{"uri":"file:///Users/davidlubomirov/Desktop/repos/personal/test-project/main.go","version":2}}}
+received: Content-Length: 163
+
+{"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"2020/03/03 11:43:30 go/packages.Load\n\tsnapshot = 2\n\tquery = [./]\n\tpackages = 1"}}
+received: Content-Length: 230
+
+{"jsonrpc":"2.0","method":"window/showMessage","params":{"type":2,"message":"You are neither in a module nor in your GOPATH. Please see https://github.com/golang/go/wiki/Modules for information on how to set up your Go project."}}
+
